@@ -109,7 +109,7 @@ var game = {
 
     for (var i = 0; i < questions[this.currentQuestion].answers.length; i++) {
       card.append("<button class='answer-button' id='button' data-name='" + questions[this.currentQuestion].answers[i]
-      + "'>" + questions[this.currentQuestion].answers[i] + "</button>"+"<div>"+"</div>");
+      + "'>" + questions[this.currentQuestion].answers[i] + "</button>"+"<br>"+"<br>");
     }
   },
 
@@ -128,7 +128,7 @@ var game = {
 
     card.html("<h2>Out of Time!</h2>");
     card.append("<h3>The Correct Answer was: " + questions[this.currentQuestion].correctAnswer);
-    card.append("<img src="+questions[this.currentQuestion].image+">");
+    card.append("<img style='width: 500px; height: 250px;' src="+questions[this.currentQuestion].image+">");
     
 
     if (game.currentQuestion === questions.length - 1) {
@@ -171,7 +171,7 @@ var game = {
 
     card.html("<h2>Nope!</h2>");
     card.append("<h3>The Correct Answer was: " + questions[game.currentQuestion].correctAnswer + "</h3>");
-    card.append("<img src="+questions[this.currentQuestion].image+">");
+    card.append("<img style='width: 500px; height: 250px;' src="+questions[this.currentQuestion].image+">");
   
 
     if (game.currentQuestion === questions.length - 1) {
@@ -189,7 +189,7 @@ var game = {
     game.correct++;
 
     card.html("<h2>Correct!</h2>");
-    card.append("<img src="+questions[this.currentQuestion].image+">");
+    card.append("<img style='width: 500px; height: 250px;' src="+questions[this.currentQuestion].image+">");
   
 
     if (game.currentQuestion === questions.length - 1) {
