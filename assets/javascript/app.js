@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 var card = $("#quiz-area");
-var countStartNumber = 10;
+var countStartNumber = 20;
 
 // Question set
 var questions = [{
@@ -219,7 +219,7 @@ $(document).on("click", ".answer-button", function(e) {
 });
 
 $(document).on("click", "#start", function() {
-  $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>10</span> Seconds</h2>");
+  $("#sub-wrapper").prepend("<h2>Time Remaining: <span id='counter-number'>20</span> Seconds</h2>");
   game.loadQuestion();
 });
 })
