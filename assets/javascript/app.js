@@ -143,7 +143,7 @@ var game = {
 
     clearInterval(timer);
 
-    card.html("<h2>All done, heres how you did!</h2>");
+    card.html("<h2>You survived! heres how you did!</h2>");
 
     $("#counter-number").text(game.counter);
 
